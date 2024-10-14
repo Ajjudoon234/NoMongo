@@ -12,10 +12,10 @@ from threading import Thread
 loop = asyncio.get_event_loop()
 
 # Keep your original token and other variables
-TOKEN = '7374201904:AAFDlUHS1QERn9XPD5DcXq2gtSLc_d4156Y'
-FORWARD_CHANNEL_ID = -1002182851898
-CHANNEL_ID = -1002182851898
-error_channel_id = -1002182851898
+TOKEN = '7538738347:AAHCjt2wDObbKDh-LLMUcM5-RNpSNma9LkY'
+FORWARD_CHANNEL_ID = -1002216474661
+CHANNEL_ID = -1002216474661
+error_channel_id = -1002216474661
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -59,7 +59,7 @@ def count_users_with_plan(plan):
 
 # Async attack command logic
 async def run_attack_command_on_codespace(target_ip, target_port, duration):
-    command = f"./soul {target_ip} {target_port} {duration} 15"
+    command = f"./nand {target_ip} {target_port} {duration} 30"
     try:
         process = await asyncio.create_subprocess_shell(
             command,
